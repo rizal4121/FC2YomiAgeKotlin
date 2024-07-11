@@ -484,7 +484,7 @@ class MainActivity : ComponentActivity(),TextToSpeech.OnInitListener {
                     })
                 queue.add(rekues)
 
-                Thread.sleep(1000)
+                Thread.sleep(2000)
                 val intent= Intent(this, MyService::class.java)
                 startService(intent)
             }

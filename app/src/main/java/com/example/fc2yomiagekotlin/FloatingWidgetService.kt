@@ -83,12 +83,15 @@ class FloatingWidgetService : Service(), View.OnClickListener , View.OnTouchList
 
     private fun addRemoveView(inflater: LayoutInflater): View? {
         removeFloatingWidgetView = inflater.inflate(R.layout.remove_floating_widget_layout, null)
+
+
         val layoutFlag = if(Build.VERSION.SDK_INT >=  Build.VERSION_CODES.O) {
             WindowManager.LayoutParams.TYPE_APPLICATION_OVERLAY
         }
         else {
             WindowManager.LayoutParams.TYPE_PHONE
         }
+
         val paramRemove = WindowManager.LayoutParams(
             WindowManager.LayoutParams.WRAP_CONTENT,
             WindowManager.LayoutParams.WRAP_CONTENT,
