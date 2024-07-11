@@ -1,4 +1,4 @@
-# FC2LiveKomentoYomiAge
+# FC2ライブコメント読み上げ
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE) 
 
 アプリ画面
